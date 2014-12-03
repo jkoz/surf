@@ -1361,7 +1361,8 @@ updatetitle(Client *c) {
 		gtk_window_set_title(GTK_WINDOW(c->win), t);
 		g_free(t);
 	} else {
-		gtk_window_set_title(GTK_WINDOW(c->win), "about:blank");
+		gtk_window_set_title(GTK_WINDOW(c->win),
+				(c->title == NULL) ? " " : c->title);
 	}
 }
 
