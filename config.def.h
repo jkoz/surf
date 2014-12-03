@@ -6,7 +6,7 @@ static char *stylefile      = "~/.surf/style.css";
 static char *scriptfile     = "~/.surf/script.js";
 
 static Bool kioskmode       = FALSE; /* Ignore shortcuts */
-static Bool showindicators  = TRUE;  /* Show indicators in window title */
+static Bool showindicators  = FALSE; /* Don't show indicators in window title */
 static Bool zoomto96dpi     = TRUE;  /* Zoom pages to always emulate 96dpi */
 static Bool runinfullscreen = FALSE; /* Run in fullscreen mode by default */
 
